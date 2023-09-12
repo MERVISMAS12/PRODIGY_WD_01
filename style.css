@@ -1,0 +1,168 @@
+:root{
+    /* CSS HEX */
+--persian-indigo: #27187eff;
+--cornflower-blue: #758bfdff;
+--maximum-blue-purple: #aeb8feff;
+--cultured: #f1f2f6ff;
+--dark-orange: #ff8600ff;
+}
+body{
+    margin: 10px;
+}
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+li{
+    display: inline-flex;
+    margin: 0;
+   
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav{
+    background-color: #ff8600ff;
+    height: 60px;
+    width: 100%;
+}
+.nav ul{
+    float: right;
+    
+}
+.nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.heading1{
+    color: var(--persian-indigo);
+    
+    font-family: 'Cabin', sans-serif;
+}
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family:  'Gentium Plus', serif;
+    color: white;
+    box-sizing: border-box;     
+}
+a:hover{
+    color: black;
+    transition: .5s;
+}
+
+.port{
+    display: inline;
+    font-family: 'Pacifico', cursive;
+    padding: 0 100px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+   
+}
+
+@media (max-width: 952px){
+    .port{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    #bar{
+        display: block;
+    }
+    
+}
+@media (max-width: 782px){
+    
+    .port{
+        text-align: center;
+        padding: 0%;
+    }
+  
+    .nav{
+        position: static;
+        width: 100%;
+        height: auto;
+        border: none;
+        background: #ff8600ff;
+        top: 80px;
+        left: 0;
+        bottom: auto;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        transition: all .5s;
+    }
+    nav ul li, .dropbtn{
+        display: block;
+        margin: 5px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.acitive{
+        background: none;
+    }
+    .artimg{
+        float: none;
+        align-items: center;
+    }
+        
+}
+.dropbtn {
+    background-color: #ff8600ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+  article{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12;
+    margin: 10px;
+  }
+  .artimg{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .subtitle{
+    color: var(--persian-indigo);
+  }

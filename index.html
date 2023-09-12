@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Koi Aquatics</title>
+    <link rel="icon" href="LOGO.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>      
+    <center><h1 class="heading1">KOI AQUATICS</h1></center>
+    <nav>
+        <ul class="nav">
+          <img src="LOGO.jpg" alt="LOGO" style="border-radius: 100%; width: 40px; padding-top: 5px;">  
+          <h2 class="port">Koi Aquatics</h2>
+            
+            <li><a class="lst" href="index.html" >Home</a></li>
+            <li><a class="lst" href="fact.html" >Koi Facts!</a></li>
+            <li><a class="lst" href="contact.html" >Contact Us</a></li>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">In stock <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#Kohaku">Kohaku</a>
+                  <a href="#Tancho">Tancho</a>
+                  <a href="#ShowaSanshoku">Showa Sanshoku</a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                
+        </ul>
+    </nav>
+    <br>
+    <article>
+      <img src="Kohaku.jpg" id="Kohaku" alt="Kohaku" style="width: auto; float: left; padding-right: 10px; padding-left: 10px;" class="artimg">
+      <h3 class="subtitle">Kohaku</h3>
+      <p class="imgpara">
+        “It begins with Kohaku and ends with Kohaku,” as many koi hobbyists say!
+        <br>
+          When you think of koi fish, the chances are you are thinking of at least one of the three Gosanke breeds. Gosanke means “the three families” in Japanese. This term is used to reference three things that best represent a category. In the world of koi, it refers to Kohaku, Taisho Sanshoku, and Showa Sanshoku. These three are the most important, popular, and award-winning breeds of koi because of their long reputation for having the best color, size, and shape.
+        <br>
+          Kohaku are one of the oldest and most popular breeds of koi fish available. They are recognizable by their pure white body and bright red markings (hi). The name Kohaku means “amber” in Japanese, which describes its beautiful, fiery markings. There are a lot of different varieties of Kohaku with different patterns of hi. A few of these varieties include the Nidon Kohaku, Sandan Kohaku, and Tancho Kohaku.
+        <br>
+          Kohaku are typically judged by the brightness of their colors and the crispness of the edges of their hi. A good Kohaku will have an unblemished, pure white base with crisp, consistent orange-ish red hi. The exact shade of the hi isn’t so important, so long as it’s all uniformly the same shade. The Kohaku should also be large and plump, a tell-tale sign of a healthy fish.
+        <br>
+          The exact origins of the Kohaku is up to speculation, but it is widely accepted that they were created by breeding a white female with a red head and a white male with a cherry blossom pattern. Another theory as that this white and red coloration came about as a result of an accidental gene mutation in the 1880s, and was so unique and attractive that people began selectively breeding for it.   
+      </p> 
+      </article>
+
+      <br><br><br>
+      <article>
+        <img src="Tancho.jpg" id="Tancho" alt="Tancho" style="width: auto; float: left; padding-right: 10px; padding-left: 10px;" class="artimg">
+        <h3 class="subtitle">Tancho</h3>
+        <p class="imgpara">
+          All koi fish have great cultural significance in Japan, however, the Tancho has taken it to a different level. Not only do they blatantly look like the Japanese flag, but they are also named after the sacred red-crowned crane (Grus japonensis), known as “tancho” in Japanese. These cranes are fabled to live over a thousand years and are a symbol of good luck and fidelity.
+          <br>
+          Tanchos are one of the rarest breeds of koi fish because they cannot be specifically bred for. This is because they are technically Kohaku, Taisho, or Showa that happened to be born with only one red spot on its head rather than an entire overlaying pattern (hi).
+          <br>
+          Selectively breeding for them is incredibly difficult as there are a multitude of genetic alleles responsible for koi coloration and pattern, so this variety is often highly sought after due to its rarity and inability to be bred consistently or in great numbers, even amongst the Gosanke varieties. If you wish to have a specific variety of koi, such as Tancho, there’s always a significant chance that even breeding with two Tancho parents will yield offspring that look entirely different.
+          <br>
+          All Tancho koi will have the signature red spot, but their body coloring will vary depending on the parent variety. Their bodies can be either pure white (Tancho Kohaku), white with small black spots (Tancho Sanke), or white with large black bands (Tancho Showa). A perfect Tancho will have a pure white base, ink-black sumi spots, and a crimson red spot on in the center of its head. It is acceptable for this spot to come as an oval, heart, or diamond shape, but the circle is the most popular.
+          <br>
+        </p>
+        </article>
+
+        <br><br><br>
+        <article>
+          <img src="Showa_Sanshoku.jpg" id="ShowaSanshoku" alt="Showa Sanshoku" style="width: auto; float: left; padding-right: 10px; padding-left: 10px;" class="artimg">
+          <h3 class="subtitle">Showa Sanshoku</h3>
+          <p class="imgpara">
+            The Showa is one of the youngest koi fish varieties. It wasn’t fully perfected until 1965 during the Showa era of Japan, after which it was named. The Showa came about in 1927. A breeder by the name of Jukichi Hoshino crossed a Kohaku (white and red coloration) with a ki utsuri (yellow with black bands). Showa didn’t gain much steam initially, as the yellow of the ki utsuri bestowed the resulting Showa offspring with dull, off-color reds and whites.
+            <br>
+            It wasn’t really until the 1960’s when another breeder, Tomiji Kobayashi, paired his Showas with Kohakus possessing intensely red coloration, resulting in more attractive Showas now commonly known as Kobayashi Showa. This line is what most modern Showas are based off of, and is commonly referred to as the old style Showa.
+            <br>
+            Showa have a black body with white (shiro) and red markings. A good quality Showa will be predominately black with very little white to accent it. Their hi should be bright and vibrant with crisp edges. The sumi should blend into their fins, called motoguro. A very sought-after pattern on a Showa is a sumi blaze on their head. It can be very difficult to breed high quality Showa because their patterns constantly change throughout their juvenile stage and do not become permanent until adulthood.
+            <br>
+            It can be difficult to tell apart the Showa and the Sanke because they look so similar, but fear not! There are many ways to tell them apart, but just remember this telltale sign: a Showa will always have more black than a Sanke, and if there is black on the head it’s a Showa!
+            <br><br><br>
+          </p>
+          </article> 
+</body>
+</html>

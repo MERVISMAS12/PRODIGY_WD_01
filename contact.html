@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Koi Aquatics</title>
+    <link rel="icon" href="LOGO.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .fact_cont{
+        background-color: bisque;
+
+        width: 70%;
+        align-items: center;
+        padding: 15px;
+    }
+    input[type=text],input[type=email],input[type=number], select {
+  padding: 5px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit],input[type=reset]  {
+  width: 100%;
+  background-color: rgba(255, 136, 0, 0.873);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #ff8600ff;
+}
+
+</style>
+<body>
+    
+            
+    <center><h1 class="heading1">KOI AQUATICS</h1></center>
+    
+    <nav>
+        
+        <ul class="nav">
+          <img src="LOGO.jpg" alt="LOGO" style="border-radius: 100%; width: 40px; padding-top: 5px;">  
+          <h2 class="port">Koi Aquatics</h2>
+            
+            <li><a class="lst" href="index.html" >Home</a></li>
+            <li><a class="lst" href="fact.html" >Koi Facts!</a></li>
+            <li><a class="lst" href="contact.html" >Contact Us</a></li>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">In stock <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#Kohaku">Kohaku</a>
+                  <a href="#Tancho">Tancho</a>
+                  <a href="#ShowaSanshoku">Showa Sanshoku</a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                
+        </ul>
+    </nav>
+    <br>
+    <center>
+        <article class="fact_cont">
+            <h3 style="font-family: Pathway Gothic One;">SHARE YOUR KOI STORY</h3>
+            <p class="imgpara" style="font-family: cardo;">
+                Do you have a story about raising, feeding, or breeding koi fish? We'd love to hear it. Drop us a note through the form below. We'd also be happy to showcase photos of your beautiful koi. If you're a koi lover, we want to hear from you.
+            </p>
+            <form >
+                <br>
+                <label for=""><span style="color: red;">*</span> Name: </label><br><br>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <br><br>
+                <label for=""><span style="color: red;">*</span> Personal Email: </label><br><br>
+                <input type="email" placeholder="Email" required>
+                <br><br>
+                <label for=""><span style="color: red;">*</span> Phone: </label><br><br>
+                <input type="number" placeholder="Phone" minlength="10" required >
+                <br><br>
+                <label for="">Comment: </label>
+                <br><br>
+                <textarea  ></textarea>
+                <br><br><br>
+                <center>
+                    <input class="sub" type="submit" onsubmit="alert('Thank You Your feedback is recorded')" >
+                    <input class="sub" type="reset" ></center>
+            </form>
+        </article>
+    </center>     
+</body>
+</html>

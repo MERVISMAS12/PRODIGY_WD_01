@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Koi Aquatics</title>
+    <link rel="icon" href="LOGO.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .fact_cont{
+        background-color: bisque;
+        width: 70%;
+        align-items: center;
+        padding: 15px;
+    }
+</style>
+<body>       
+    <center><h1 class="heading1">KOI AQUATICS</h1></center>
+    <nav> 
+        <ul class="nav">
+          <img src="LOGO.jpg" alt="LOGO" style="border-radius: 100%; width: 40px; padding-top: 5px;">  
+          <h2 class="port">Koi Aquatics</h2>
+            
+            <li><a class="lst" href="index.html" >Home</a></li>
+            <li><a class="lst" href="fact.html" >Koi Facts!</a></li>
+            <li><a class="lst" href="contact.html" >Contact Us</a></li>
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">In stock <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#Kohaku">Kohaku</a>
+                  <a href="#Tancho">Tancho</a>
+                  <a href="#ShowaSanshoku">Showa Sanshoku</a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+                
+        </ul>
+    </nav>
+    <br>
+    <center>
+        <img class="artimg" src="https://images.squarespace-cdn.com/content/v1/4f6c8d6ae4b08696a7443c8b/1507179524641-BRD82L98030AUA1A5JP6/Koi_feeding%2C_National_Arboretum.jpg?format=500w" alt="koi">
+        <h2>15 FUN KOI FISH FACTS</h2>
+        <p style="padding-left: 10%;padding-right: 10%;">
+            No matter how much you know about koi fish there are always more fun koi fish facts to be learned! There are so many interesting things to learn about koi fish that you should learn something new with these 15 fun koi fish facts.
+        </p>
+    <article class="fact_cont">
+        <h3 style="font-family: Pathway Gothic One;">KOI FISH FACTS - ORIGINS</h3>
+        <p class="imgpara" style="font-family: cardo;">
+            <ul>
+                <li>Koi fish were originally brought to Japan as a food source</li>
+                <li>Koi fish are decedent's of the hardy Carp which is so adaptable it can be found all around the world.</li>
+                <li>Koi fish were developed by farmers who noticed the bright color patches on carp and breed them to get the beautiful fish we have today</li>
+                <li>Koi fish were brought to the worlds attention after one was given to the Japanese emperor as a gift in 1914 to grace the imperial palaces mote.</li>
+                <li>Koi fish and Goldfish are distant cousins as they both decent from Carp, but goldfish came about long before koi fish did.</li>
+            </ul>
+        </p>
+    </article>
+
+    <article class="fact_cont">
+        <h3 style="font-family: Pathway Gothic One;">KOI FISH FACTS - BIOLOGY</h3>
+        <p class="imgpara" style="font-family: cardo;">
+            <ul>
+                <li>The largest koi fish ver recorded was a whooping four feet long and 91 pounds! The monster sized fish was later sold to the koi enthusiast Geoff Lawton where she received the name Big Girl.</li>
+                <li>Koi fish are omnivores who will eat just about anything you give them including lettuce and watermelon </li>
+                <li>Koi fish can actually get sun burns so make sure they have some shade on sunny days!</li>
+                <li>Koi fish not only look the best in a group they also enjoy having other koi fish around. Make sure to keep an eye out if you put any other types of fish in your pond though because koi have been known to bully non-koi pond mates.</li>
+                <li>The oldest koi fish ever was a koi named Hanako was born in 1791 and didn't die until 1977 that means she lived to be 226!</li>
+            </ul>
+        </p>
+    </article>
+    <img class="artimg" src="https://images.squarespace-cdn.com/content/v1/4f6c8d6ae4b08696a7443c8b/1507179460628-JCRXH8LBNFTS0T1QZ791/iStock-512889948+%281%29.jpg?format=1500w" alt="Koi">
+    <article class="fact_cont">
+        <h3 style="font-family: Pathway Gothic One;">KOI FISH FACTS - MISCELLANEOUS</h3>
+        <p class="imgpara" style="font-family: cardo;">
+            <ul>
+                <li>There are 24 koi fish varieties and counting. A new koi fish variety could be presented at any time but for now there are the Kohaku, Taisho Sanke, Showa Sanshoku, Tancho, Shiro Utsuri, Hi Utsuri, Ki Utsuri, Asagi, Shusui, Matsuba, Platinum Ogon, Yamabuki Ogon, Kujaku, Hariwake, Kikusui, Kumonryu, Beni Kumonryu, Chagoi, Soragoi, Ochiba Shigure,Goromo, Goshiki, Kikokuryu, and the Kin Kikokuryu.</li>
+                <li>Koi fish are surprisingly intelligent. This allows koi parents to train their koi fish to eat from their hand and even ring a bell for a treat</li>
+                <li>Koi fish symbolize persistence, determination, wealth, success, and good fortune</li>
+                <li>Koi fish's brilliant colors make it harder for them to survive because it attracts predators such as cats, birds of prey, and raccoons.</li>
+                <li>Female koi fish can lay as many as 50,000 eggs during one breeding season of which half will hatch if not tended to. That is a lot of baby fish!</li>
+            </ul>
+        </p>
+    </article>
+    
+</center>
+</body>
+</html>
